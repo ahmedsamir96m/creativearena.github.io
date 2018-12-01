@@ -182,7 +182,7 @@ i {
   margin-right: 30px;
 }
 .menu-items a {
-  color: #E7DFDD;
+  color: #fff;
 	text-decoration: none;
   padding: 15px;
 	font-size: 17px;
@@ -194,8 +194,7 @@ i {
 .menu-items a:hover {
   color: #3498db;
   font-size: 18px;
-	  transform: scale(1.1);
-
+  transform: scale(1.1);
 }
 #contact-us {
   color: #fff;
@@ -208,12 +207,14 @@ i {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .home-content h1 {
   font-size: 54px;
   text-transform: uppercase;
-  color: #E7DFDD;
+  color: #FFF;
 	width: 80vw;
 }
+
 .home-content p {
   font-size: 18px;
   margin-bottom: 50px;
@@ -240,6 +241,7 @@ label {
 	right: 40px;
 	display: none;
 }
+
 @media(max-width: 850px){
 	label {
 		display: block;
@@ -253,7 +255,7 @@ label {
 	}
 	#main-nav .menu-items {
 		position: absolute;
-		top: 65%;
+		top: 60%;
 		left: 50%;
 		margin: 0;
 		transform: translate(-50%, -50%);
@@ -275,9 +277,10 @@ label {
 	#main-nav img {
 		display: block;
 		position: absolute;
-		left: 50%;
-		top: 10%;
-		transform: translate(-50%, -50%);
+		left: 5%;
+		top: 5%;
+		transform: translate(-5%, -5%);
+    width: 100px;
 		margin: 0;
 		padding: 0;
 	}
@@ -304,7 +307,18 @@ label {
 		padding: 10px 15px;
 	}
 }
-
+@media (max-width: 600px){
+  .home-content h1 {
+    font-size: 32px;
+  }
+  .home-content p {
+    font-size: 16px;
+  }
+  .home-content a {
+    padding: 10px 5px;
+    margin: 0px;
+  }
+}
 /******* About Section ******/
 
 #about {
@@ -394,7 +408,7 @@ label {
   text-align: center;
 }
 .work-container {
-  width: 95%;
+  width: 100%;
   margin: 50px auto;
 }
 .row {
@@ -508,17 +522,20 @@ label {
 }
 @media (max-width: 650px) {
   .work-container {
-    width: 90%;
+    width: 100%;
     margin: 20px auto;
   }
   .work-box .column {
     width: calc(100% - 50px);
     margin-bottom: 20px;
+/*    margin: auto;*/
+    margin-left: 25px;
   }
 	.work-box .column .img-box img {
-		margin: 0;
+		margin: auto;
 		padding: 0;
-		height: 400px;	
+		height: auto;
+    width: 100%;
 	}
 }
 /**** Social Media Section  ****/
@@ -873,6 +890,11 @@ label {
   padding: 15px 80px;
 }
 
+@media (max-width: 450px) {
+  #footer .subscribe a {
+    padding: 5px;
+  }
+}
 @media (max-width: 650px) {
   #footer .footer-info h1 {
     font-size: 28px
@@ -882,10 +904,10 @@ label {
     line-height: 2;
   }
   .subscribe input[type=text], select {
-    width: 80%;
+    width: 85%;
   }
   .subscribe a {
-    padding: 10px 30px;
+    padding: 5px 30px;
   }
   .subscribe a:hover {
     padding: 12px 40px;
@@ -894,6 +916,24 @@ label {
 @media (max-width: 800px) {
   #footer .footer-info p {
     line-height: 2;
+  }
+}
+
+@media (max-width: 357px) {
+  #footer .footer-info h1 {
+    width: auto;
+    padding: 0;
+    margin: auto;
+    font-size: 20px;
+  }
+  #footer .footer-info p {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+  #footer .subscribe a {
+    width: 100%;
+    padding: 0;
+    margin: auto;
   }
 }
 
@@ -933,12 +973,12 @@ label {
 
 #code-credits {
 	margin: 0;
-/*	height: 100px;*/
 	position: absolute;
-	top: 81%;
+	top: 82%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	
+  width: 100%;
+  text-align: center;
 }
 #code-credits a {
   text-decoration: none;
@@ -961,4 +1001,9 @@ label {
 		text-align: center;
 		float: none;
 	}
+}
+@media (max-width: 500px) {
+  #code-credits {
+    font-size: 12px;
+  }
 }
